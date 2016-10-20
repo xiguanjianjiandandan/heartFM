@@ -1,0 +1,25 @@
+<view class="box">
+	<view class="userbox">
+		<image class="userbg" src="{{userInfo.userbg}}"/>
+		<image class="avatar" src="{{userInfo.avatar}}"/>
+		<text class="name">{{userInfo.name}}</text>
+		<image class="qiandao" src="{{qiandaoImg.imgurl}}" bindtap="toQiandao"/>
+	</view>
+	<view>
+	<block wx:for="{{minelist}}">
+			<ul class="mine-list">
+				<block wx:for="{{item.listitems}}">
+					<li class="listitems">
+						<image src="{{item.icon}}"/>
+						<text>{{item.text}}</text>
+						
+					</li>
+				</block>
+				
+			</ul>
+	</block>
+	</view>
+	
+	
+
+</view>

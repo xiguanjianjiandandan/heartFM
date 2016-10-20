@@ -1,0 +1,25 @@
+<view class="box">
+	<view class="usersetting">
+		<image class="avatar" src="{{userInfo.avatar}}"/>
+		<text class="name">{{userInfo.name}}</text>
+		<button class="updatebtn">更新资料</button>
+	</view>
+	<block wx:for="{{settinglist}}"  wx:for-index="outerIndex">
+		<ul class="{{outerIndex == 2 ? 'settinglist last':'settinglist'}}">
+			<block wx:for="{{item.listitems}}" wx:for-index="innerIndex">
+				<li class="listitems">
+					<image class="leftIcon" src="{{item.leftIcon}}"/>
+					<text class="text">{{item.text}}</text>
+					<view wx:if="{{outerIndex !=2 }}" class="switchbox">
+						<switch />
+					</view>
+					<view wx:else>
+						<image class="rightIcon"  src="{{item.rightIcon}}"/>
+					</view>
+					
+				</li>
+			</block>		
+		</ul>
+	</block>
+	<button class="exitbtn" type="">退出</button>
+</view>

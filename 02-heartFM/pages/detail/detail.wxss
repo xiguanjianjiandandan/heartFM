@@ -1,0 +1,217 @@
+page{
+	width: 100%;
+	height: 100%;
+}
+.box{
+	
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	width: 100%;
+	height: 90%;
+	
+}
+.box .imagebox{
+	width: 100%;
+	height: 60%;
+	position: relative;
+}
+.box .imagebox image{
+	width: 100%;
+	height: 100%;
+}
+.box .imagebox .title{
+	position: absolute;
+	bottom: 8px;
+	left: 5px;
+	font-size: 14px;
+	color: #fff;
+	width: 75%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.box .imagebox .listenernum{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	font-size: 12px;
+	color: #fff;	
+}
+/*播放控制*/
+.controlbar{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.controlbar  view{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+.controlbar  view .prebtn{
+	width: 45px;
+	height: 45px;
+}
+.controlbar  view .nextbtn{
+	width: 45px;
+	height: 45px;
+}
+.controlbar  view .playbtn{
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.controlbar  view .currenttime{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+}
+.controlbar progress{
+
+}
+
+.userbox{
+	width: 100%;
+	height: 25%;
+	display: flex;
+	border-bottom: 1px solid #E3E3E3;
+}
+.userbox .avatar{
+	flex: 3;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.userbox .avatar image{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.userbox .right{
+	flex: 7;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 15px 5px 15px 5px;
+	display: flex;
+	flex-direction: column;
+}
+.userbox .right view{
+	display: flex;
+	justify-content: space-between;
+	flex: 2;
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+.userbox .right view .name{
+	
+}
+
+.userbox .right view  image{
+	width: 45px;
+	height: 20px;
+}
+.userbox .right .des{
+	flex: 4;
+	margin-top: 5px;
+	font-size: 12px; 
+	overflow: hidden;  
+	
+}
+
+.giftbox{
+	padding-bottom: 60px;
+}
+.giftbox .title{
+	display: flex;
+	height: 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+.giftbox .title text{
+	font-size: 14px;
+	padding-left: 10px;
+}
+.giftbox .title image{
+	width: 10px;
+	height: 20px;
+	padding-right: 10px;
+}
+.giftbox .giftlist{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+.giftbox .giftlist .giftlist-item{
+	display: flex;
+	width: 20%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.giftbox .giftlist .giftlist-item image{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+.giftbox .giftlist .giftlist-item text{
+	font-size: 12px;
+	width:90%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;	
+}
+/*底部菜单*/
+.menu{
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.8;
+	
+}
+.menu .menu-list{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+}
+.menu .menu-list .menulist-item{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.menu .menu-list .menulist-item image{	
+	width: 20px;
+	height: 20px;
+}
+.menu .menu-list .menulist-item text{
+	color:#fff;
+	font-size: 12px;
+	margin-top: 3px;
+}
+

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+  	"pages/index/index",	
+  	"pages/list/list",
+  	"pages/detail/detail",
+  	"pages/setting/setting",
+    "pages/mine/mine",
+  	"pages/find/find",
+    "pages/community/community"
+
+    
+
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "gray",
+    "navigationBarTitleText": "世界和我爱着你",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+  	"color":"gray",
+  	"selectedColor":"#fff",
+  	"backgroundColor":"#000",
+  	"borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"/images/footer/nav_index.png",
+      "selectedIconPath":"/images/footer/nav_index_act.png"
+    }, {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath":"/images/footer/nav_find.png",
+      "selectedIconPath":"/images/footer/nav_find_act.png"
+    },{
+      "pagePath": "pages/community/community",
+      "text": "社区",
+      "iconPath":"/images/footer/nav_forum.png",
+      "selectedIconPath":"/images/footer/nav_forum_act.png"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath":"/images/footer/nav_my.png",
+      "selectedIconPath":"/images/footer/nav_my_act.png"
+    },{
+      "pagePath": "pages/setting/setting",
+      "text": "设置",
+      "iconPath":"/images/footer/nav_setting.png",
+      "selectedIconPath":"/images/footer/nav_setting_act.png"
+    }]
+  }
+}

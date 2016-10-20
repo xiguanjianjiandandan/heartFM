@@ -1,0 +1,27 @@
+<view class="list-container">
+	 <scroll-view scroll-y="true" bindscrolltoupper="upper"
+	 	 bindscrolltolower="lower" >
+	 	 <button wx:if="{{loadhidden==false}}"  class="refreshbtn" type="default" style="border:0;" loading="{{refreahbtn.loading}}"  plain="{{refreahbtn.plain}}"  >刷新中...</button>
+		<ul class="ul">
+			<block wx:for="{{listdata}}">
+				<navigator url="/pages/detail/detail?id={{listdata[index].id}}" hover-class="navigator-hover">
+					<li class="listItem">
+						<view class="left">
+							<image src="{{item.cover}}"/>
+						</view>
+						<view class="right">
+							<text class="title">{{item.title}}</text>
+							<text class="name">{{item.speak}}</text>
+							<text class="viewnum">收听{{item.viewnum}}</text>
+						</view>
+					</li>
+				</navigator>
+				
+			</block>
+		</ul>
+		<button wx:if="{{loadhidden==false}}" class="loadbtn" type="default" style="border:0;" loading="{{refreahbtn.loading}}"  plain="{{refreahbtn.plain}}"  >加载中...</button>
+	</scroll-view>
+	<loading hidden="{{loadinghidden == true}}" bindchange="loadingChange">
+    	加载中...
+  	</loading>
+</view>

@@ -1,0 +1,57 @@
+<view class="box">
+	<view class="imagebox">
+		<image src="{{detailItem.cover}}"/>
+		<text class="title">{{detailItem.title}}</text>
+		<text class="listenernum">收听{{detailItem.viewnum}}</text>
+	</view>
+	<view class="controlbar">
+		<audio src="{{detailItem.url}}"  action="{{action}}"  bindtimeupdate="timeupdate"></audio>
+		<view>
+			<image src="{{controler.preimg}}" class="prebtn" bindtouchstart="prebtntouchdown" bindtouchend="prebtntouchup"/>
+			<image src="{{controler.playimg}}" class="playbtn" bindtouchstart="playbtntouchdown" bindtouchend="bindbtntouchup"/>
+			<image src="{{controler.nextimg}}" class="nextbtn" bindtouchstart="nextbtntouchdown" bindtouchend="nextbtntouchup"/>
+			<text class="currenttime">{{totalDuring}}</text>		
+		</view>
+		<progress percent="{{curPercent}}" color="peru" stroke-width="3"></progress>
+	</view>
+	<view class="userbox">
+		<view class="avatar"><image src="{{detailItem.diantai.cover}}"/></view>
+		<view class="right">
+			<view>
+				<text class="name">{{detailItem.diantai.title}}</text>
+				<image src="/images/detail/mail_btn.png"/>
+			</view>
+			<text class="des">{{detailItem.diantai.content}}</text>
+		</view>
+	</view>
+	<view wx:if="{{detailItem.user_gift_list.length!=0}}"  class="giftbox">
+		<view class="title">
+			<text>最新送礼</text>
+			<image src="/images/detail/detail.png"/>
+		</view>
+		<ul  class="giftlist">
+			<block wx:for="{{detailItem.user_gift_list}}">
+				<li class="giftlist-item">
+					<image src="{{item.avatar}}"/>
+					<text>{{item.nickname}}</text>
+				</li>
+			</block>
+			
+		</ul>
+	</view>
+	
+	<view class="menu">
+		<ul class="menu-list">
+			<block wx:for="{{menulist}}">
+				<li class="menulist-item">
+					<image src="{{item.icon}}"/>
+					<text>{{item.text}}</text>
+				</li>
+			</block>
+			
+		</ul>
+	</view>
+	<loading hidden="{{loadinghidden == true}}" bindchange="loadingChange">
+    	加载中...
+  	</loading>
+</view>

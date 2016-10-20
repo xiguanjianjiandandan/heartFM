@@ -1,0 +1,97 @@
+<view class="container">
+	<!--banner部分-->
+	<view class="banner">
+	  	<swiper indicator-dots="{{indicatorDots}}"
+			  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			  <block wx:for="{{banners}}">
+			    <swiper-item>
+			      <image src="{{item}}" class="slide-image"/>
+			    </swiper-item>
+	 			 </block>
+			</swiper>
+	 </view>
+	 <!--搜索框-->
+	 <view class="searchBar">
+	 	<input placeholder="搜索主播名/节目名" />
+	 	<image src="/images/find/find_search_icon.png"/>
+	 </view>
+	 <!--分类-->
+	 <view class="category">
+	 	<view class="mood">
+	 		<view class="title">心情</view>
+	 		<view class="listbox">
+	 			<ul class="list">
+			 		<block wx:for="{{moodlist1}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+			 	</ul>
+			 	<ul class="list secondlist">
+			 		<block wx:for="{{moodlist2}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+			 	</ul>
+			 	<ul class="list">
+			 		<block wx:for="{{moodlist3}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+		 	</ul>
+	 		</view>
+		 	
+	 	</view>	
+	 	<view class="scene">
+	 		<view class="title">场景</view>
+	 		<view class="listbox">
+	 			<ul class="list">
+			 		<block wx:for="{{sencelist1}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+			 	</ul>
+			 	<ul class="list secondlist">
+			 		<block wx:for="{{sencelist2}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+			 	</ul>
+			 	<ul class="list">
+			 		<block wx:for="{{sencelist3}}">
+			 			<li class="{{index == 1? 'list-item second-item':'list-item'}}">
+			 				<view><image src="{{item.icon}}"></image></view>
+			 				<text>{{item.text}}</text>
+			 			</li>
+			 		</block>
+		 	</ul>
+	 		</view>
+		 	
+	 	</view>
+	 </view>
+	<!--主播-->
+	<view class="speaker">
+		<view class="title">
+			<text>主播</text>
+			<image src="/images/find/detail.png"/>
+		</view>
+		<ul class="speaker-list">
+			<block wx:for="{{speakerlist}}">
+				<li class="speaker-list-item">
+					<view><image src="{{item.cover}}"/></view>
+					<view><text class="name">{{item.title}}</text><text class="programnum">节目{{item.fmnum}}</text></view>
+				</li>
+			</block>
+			
+		</ul>
+	</view>
+</view>

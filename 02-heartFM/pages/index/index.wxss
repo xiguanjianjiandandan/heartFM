@@ -1,0 +1,245 @@
+/**index.wxss**/
+.container{
+	justify-content: flex-start;
+	padding: 0;
+	background: #F0EDED;
+}
+.container .banner{
+	width: 100%;
+	height: 150px;
+}
+.container .banner swiper{
+	width: 100%;
+	height: 100%;
+}
+.container .banner swiper swiper-item{
+	width: 100%;
+	height: 100%;
+}
+.container .banner swiper swiper-item image{
+	width: 100%;
+	height: 100%;
+}
+/*菜单栏*/
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 140px;
+	padding: 0;
+	background: #FCFCFC;
+}
+.menu .menu-list{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;	
+	font-size: 10px;
+}
+.menu  navigator{
+	width: 25%;
+	height: 70px;
+}
+
+.menu .menu-list  navigator .list-item{
+	display: flex;
+	width: 100%;
+	height: 70px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.menu .menu-list navigator  .list-item image{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-bottom: 3px;
+}
+.menu .menu-list  navigator  .list-item .text{
+	font-size: 12px;
+}
+/*热门推荐*/
+.tuijian{
+	width: 100%;
+	height: 150px;
+	background: #FCFCFC;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 15px;
+}
+.tuijian .title{
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	padding-left: 10px;
+	border-left: 3px solid orangered;
+}
+.tuijian .tuijian-list{
+	
+	display: flex;
+	width: 100%;
+	flex: 1;
+	overflow: hidden;
+	
+}
+.tuijian .tuijian-list navigator {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.tuijian .tuijian-list  .tuijian-list-item{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 3px;
+}
+.tuijian .tuijian-list  .tuijian-list-item image{
+	display: block;
+	width: 100%;
+	height: 90px;
+	margin-bottom: 5px;
+}
+.tuijian .tuijian-list navigator .tuijian-list-item b{
+	display: block;
+	width: 100%;
+	font-size: 6px;
+}
+/*最新心理科*/
+.lastest{
+	width: 100%;
+	height: 220px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+.lastest .lastest-title{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	padding-left: 10px;
+	border-left: 3px solid cadetblue;
+	box-sizing: border-box;
+	
+}
+.lastest .more{
+	width: 94%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	margin-left: 3%;
+	margin-right: 3%;
+	
+}
+.lastest .more image{
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.lastest-list{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.lastest-list navigator{
+	display: flex;
+	align-content: center;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	
+}
+.lastest-list navigator .lastest-list-item{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	padding-left: 10px;
+}
+.lastest-list-item image{
+	width: 35px;
+	height: 35px;
+}
+.lastest-list-item .right{
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+}
+.lastest-list-item .title{
+	font-size: 12px;
+}
+.lastest-list-item .author{
+	font-size: 10px;
+	margin-top: 5px;
+}
+/*心理电台推荐*/
+
+.station-tuijian{
+	width: 100%;
+	height: 170px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+.station-tuijian .station-tuijian-title{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	padding-left: 10px;
+	border-left: 3px solid cadetblue;
+	box-sizing: border-box;
+	
+}
+.station-tuijian .station-more{
+	width: 94%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	margin-left: 3%;
+	margin-right: 3%;
+	
+}
+.station-tuijian .station-more image{
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.station-tuijian-list{
+	flex: 1;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.station-tuijian-list .station-tuijian-list-item{
+	flex: 1;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.station-tuijian-list .station-tuijian-list-item image{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.station-tuijian-list .station-tuijian-list-item text{
+	font-size: 12px;
+}

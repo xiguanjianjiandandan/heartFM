@@ -1,0 +1,76 @@
+page{
+	width: 100%;
+	height: 100%;
+}
+.list-container{
+	width: 100%;
+	height: 100%;
+}
+.list-container scroll-view{
+	width: 100%;
+	height: 100%;
+}
+/*.list-container scroll-view .refreshbtn{
+	display: none;
+}
+.list-container scroll-view .loadbtn{
+	display: none;
+}*/
+.list-container scroll-view .ul{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #E3E3E3;
+}
+.list-container scroll-view .refreshbtn,.list-container scroll-view .loadbtn{
+	width: 100%;
+	height: 30px;
+	background: #fff;
+	line-height: 30px;
+	font-size: 12px;
+	border-radius: 0;
+	
+}
+.list-container navigator{
+	width: 96%;
+	height: 80px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.list-container .listItem{
+	display: flex;
+	border-top: 1px solid #E3E3E3;
+	width: 100%;
+	height: 100%;
+}
+.list-container .listItem .left{
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.list-container .listItem .left image{
+	width: 70px;
+	height: 70px;
+}
+.list-container .listItem .right{
+	flex: 9;
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+.list-container .listItem .right .title{
+	font-size: 14px;
+	margin-top: 5px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.list-container .listItem .right .name{
+	font-size: 12px;
+	margin-top: 8px;
+}
+.list-container .listItem .right .viewnum{
+	font-size: 12px;
+	margin-top: 8px;
+}

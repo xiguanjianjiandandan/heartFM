@@ -1,0 +1,11 @@
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="slideChange">
+  <block wx:for="{{guideimgs}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="comeinbtn" wx:if="{{isLastGuide == true}}" bindtap="toIndex">
+	<image src="/images/welcome/guide_btn.png"/>
+</view>

@@ -1,0 +1,62 @@
+Page({
+	data:{
+		userInfo:{
+			"avatar":"/images/setting/peo.png",
+			"name":"沉默抒怀者",
+		},
+		settinglist:[
+			{
+				listitems:[
+					{
+						"leftIcon":"/images/setting/alarm.png",
+						"text":"定时关闭",
+						"rightIcon":"/images/setting/off.png"
+					}
+				]
+			},
+			{
+				listitems:[
+					{
+						"leftIcon":"/images/setting/sns_qq.png",
+						"text":"绑定QQ账号",
+						"rightIcon":"/images/setting/off.png"
+					},
+					{
+						"leftIcon":"/images/setting/sns_sina.png",
+						"text":"绑定微博账号",
+						"rightIcon":"/images/setting/off.png"
+					}
+				]
+			},
+			{
+				listitems:[
+					{
+						"leftIcon":"/images/setting/rmdapp.png",
+						"text":"应用精选",
+						"rightIcon":"/images/setting/detail.png"
+					},{
+						"leftIcon":"/images/setting/setting_share.png",
+						"text":"分享给好友",
+						"rightIcon":""
+					},
+					{
+						"leftIcon":"/images/setting/setting_update.png",
+						"text":"新版本检测",
+						"rightIcon":""
+					},
+					{
+						"leftIcon":"/images/setting/setting_feedback.png",
+						"text":"反馈意见",
+						"rightIcon":"/images/setting/detail.png"
+					}
+				]
+			}
+			
+		]
+	},
+	toSwitch: function(){
+		
+	}
+			
+
+})
